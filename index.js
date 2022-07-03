@@ -18,7 +18,7 @@ app.use(cors({origin:"https://productifyapi.netlify.app",credentials:true}))
 
 
 // connection establishment
-mongoose.connect(process.env.DB_CONNECT, (error) => {
+mongoose.connect(process.env.DB_CONNECT,{useNewUrlParser:true,useUnifiedTopology:true},(error) => {
     if (error) {
         console.log(error);
     }
