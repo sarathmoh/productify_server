@@ -13,7 +13,7 @@ const apiRoute = require('./routes/api')
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.json());
-app.use(cors())
+app.use(cors({origin:"https://productifyapi.netlify.app",credentials:true}))
 
 
 
