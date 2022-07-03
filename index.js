@@ -33,7 +33,7 @@ app.use('/auth',authRoute)
 app.use('/api',apiRoute)
 
 //port
-app.listen(process.env.PORT || 4000, () => {
+app.listen(process.env.PORT, () => {
     console.log("server started at 4000");
 })
 
